@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compra Confirmada | Traço Profissional</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('fundo-beoir-tattoo.png') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100vh;
+      background-color: #1a1a1a;
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 40px;
+      border-radius: 12px;
+      margin: auto;
+      width: 90%;
+      max-width: 600px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+    strong {
+      color: #c084fc;
+    }
+  </style>
+
+  <!-- Facebook Pixel Purchase Event -->
+  <script>
+    !function(f,b,e,v,n,t,s){
+      if(f.fbq)return;n=f.fbq=function(){
+        n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)
+    }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1213581693591564');
+    fbq('track', 'Purchase', {
+      value: 47.00,
+      currency: 'BRL'
+    });
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1213581693591564&ev=Purchase&noscript=1"/>
+  </noscript>
+</head>
+<body>
+  <div class="overlay">
+    <h1>🎉 Sua compra foi confirmada!</h1>
+    <p>Parabéns por investir no seu futuro como tatuador(a)!<br><br>
+    O acesso ao eBook <strong>“Do Rascunho ao Traço Profissional”</strong> já está a caminho do seu e-mail.<br><br>
+    Se não encontrar, verifique também a caixa de spam ou promoções.<br><br>
+    Qualquer dúvida, fale comigo direto no Instagram: <strong>@bahbeoirtatuadora</strong></p>
+  </div>
+</body>
+</html>
